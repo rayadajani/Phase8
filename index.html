@@ -1,0 +1,69 @@
+<html>
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Escape Room Phase 8</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="column grey"> 
+			<div class="one center-content">
+				<img src="image/buton.png" class="restrict-img-size" onclick="appearImages(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/rocket3.png" id="piece3" class="stretch-img-size hidethis" onclick="appearThird(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/rocket2.png"  id="piece2" class="stretch-img-size hidethis" onclick="appearSecond(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/alien.jpg" id="alien" class="stretch-img-size hidethis" onClick="imageSound(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/asteroid.png"  id="asteroid" class="stretch-img-size hidethis" onClick="imageSound(this)"/>
+			</div>
+		</div>
+		<div class=" col grey"> 
+			<div class="title center-content">
+				<h1>SINCE YOU LOCATED THE SPACESHIP PIECES, BUILD THEM IN THE CORRECT ORDER!</h1>
+			</div>
+			<div class="dblue grey">
+				<div class="storage">
+					<div class="rocket center-content-right" id="first">
+						<img src="image/rocket1.png"  id="one" class="restrict-img-size hidethis"/>
+					</div>
+					<div class="rocket center-content-left">
+						<img src="image/rocket2.png" id="two" class="restrict-img-size hidethis"/>
+					</div>
+				</div>
+				<div class="storagee">
+					<div class="rocket center-content-right">
+						<img src="image/rocket3.png" id="three" class="restrict-img-size hidethis"/>
+					</div>
+					<div class="rocket center-content-left">
+						<img src="image/rocket4.png" id="four" class="restrict-img-size hidethis"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column grey"> 
+			<div class="one center-content">
+				<img src="image/final.png" class="restrict-img-size hidethis"/>
+			</div>
+			<div class="blue box">
+				<img src="image/rocket4.png"  id="piece4" class="stretch-img-size hidethis" onclick="appearFourth(this)"/>
+			</div>
+			<div class="blue box" >
+				<img src="image/planet.jpg"  id="planet" class=" stretch-img-size hidethis" onClick="imageSound(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/rocket1.png"  id="piece1" class="stretch-img-size hidethis" onclick="appearFirst(this)"/>
+			</div>
+			<div class="blue box">
+				<img src="image/spaceship.png"  id="spaceship" class=" stretch-img-size hidethis" onClick="imageSound(this)"/>
+			</div>
+		</div>
+		<audio src="sounds/boo.mp3" type="audio/mp3" id="boo"></audio>
+	    <script src="script.js"></script>
+	</body>
+</html>

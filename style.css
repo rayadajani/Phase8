@@ -1,0 +1,112 @@
+/* Make sure you specify a "height: 100vh", "width: 100vw", and "margin: 0" for all your pages */
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	display: flex;
+}
+
+.restrict-img-size {
+	max-height: 100%;
+	max-width: 100%;
+}
+.stretch-img-size {
+	height: 100%;
+	width: 100%;
+}
+
+.hidethis{
+	display: none;
+	visibility: hidden;
+	}
+
+.title {
+	background-color: black;
+	color: white;
+	display:flex;
+	height: 10%;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+    font-family: Courier New;
+	font-size: 15px;
+}
+
+.grey {
+	background-color: grey;
+}
+.dblue {
+	background-color:#303859;
+	display:block;
+	height: 90%;
+	width: 100%;
+}
+.red{
+	background-color: red;
+	opacity: 0.5;
+}
+.one{
+    background-image: url("image/galaxy.jpg");
+    display:flex;
+	height: 10%;
+	width: 100%;
+}
+.box{
+	display:block;
+	height: calc(90%/4);
+	width: 100%;
+}
+.blue{
+	background-color: #2E4DA1;
+}
+
+.rocket{
+	background-color: black;
+	display:flex;
+	height: 100%;
+	width: 50%;
+}
+.column{
+	display:block;
+	height: 100%;
+	width: 25%;
+}
+.col{
+	display:block;
+	height: 100%;
+	width: 50%;
+}
+.storage{
+	background-color: #F5FBFF;
+	display:flex;
+	height: 50%;
+	width: 100%;	
+}
+.storagee{
+	background-color: #3C446B;
+	display:flex;
+	height: 50%;
+	width: 100%;
+}
+
+.light{
+	background-color:grey;
+}
+.opaque {
+	opacity: 0.5;
+	background-color: #92C6D4;
+}
+.center-content {
+	align-items: center;
+	justify-content: center;
+}
+.center-content-right {
+	align-items: center;
+	justify-content: flex-end;
+}
+.center-content-left {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* Use this class on your image to restrict the size so it stays completely within it's parent div */
