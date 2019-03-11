@@ -56,7 +56,6 @@ function appearSecond(el){
 		// allow the second image to appear and be placed in the div located in the right first div
 		document.getElementById("two").classList.remove("hidethis")
 		}else{
-			badSound.play();
 			window.location.reload();
 	
 	}
@@ -68,7 +67,6 @@ function appearThird(el){
 		// allow the third image to appear and be placed in the div located in the left bottom div
 		document.getElementById("three").classList.remove("hidethis")
 		}else{
-			badSound.play();
 			window.location.reload();
 	}
 }
@@ -79,7 +77,6 @@ function appearFourth(el){
 		document.getElementById("four").classList.remove("hidethis")
 		m.classList.remove("hidethis");
 		}else{
-			badSound.play();
 			window.location.reload();
 	}
 }
