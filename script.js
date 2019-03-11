@@ -16,11 +16,12 @@ i = document.getElementById("one");
 j = document.getElementById("two");
 k = document.getElementById("three");
 l = document.getElementById("four");
-m= document.getElementBy
+m= document.getElementById("done");
 var badSound = document.getElementById('boo');
 
+//This function will remove the images from the "hidethis" class and the images will be appear in their designated divs
 function appearImages(el){
-	    alert("Build the rocket together!");
+	    alert("Build the rocket together in the CORRECT order!");
 		a.classList.remove("hidethis");
 		b.classList.remove("hidethis");
 		c.classList.remove("hidethis");
@@ -45,7 +46,7 @@ var piece2= new Boolean(false)
 var piece3= new Boolean(false)
 var piece4= new Boolean(false)
 function appearFirst(el){
-	//The first piece will be removed from the hide this class and will appear in in the first div located on the top left.
+	//The first piece will be removed from the hide this class and will appear in in the first div located on the top left
          i.classList.remove("hidethis");
 		 piece1 =true;
 }
@@ -76,7 +77,7 @@ function appearFourth(el){
 		piece4 =true;
 		// allow the fourth image to appear and be placed in the div located in the right bottom div
 		document.getElementById("four").classList.remove("hidethis")
-		h.classList.remove("hidethis");
+		m.classList.remove("hidethis");
 		}else{
 			badSound.play();
 			window.location.reload();
