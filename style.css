@@ -21,7 +21,7 @@ body {
 	}
 
 .title {
-	background-color: black;
+	background-image: url("image/galaxy.jpg");
 	color: white;
 	display:flex;
 	height: 10%;
