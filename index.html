@@ -8,7 +8,7 @@
 	<body>
 		<div class="column grey"> 
 			<div class="one center-content">
-				<img src="image/buton.png" class="restrict-img-size" onclick="appearImages(this)"/>
+				<img src="image/buton.png" class="restrict-img-size" id="build" onclick="appearImages(this)"/>
 			</div>
 			<div class="blue box">
 				<img src="image/rocket3.png" id="piece3" class="stretch-img-size hidethis" onclick="appearThird(this)"/>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class=" col grey"> 
-			<div class="title center-content">
+			<div class="title restrict-img-size center-content">
 				<h1>ASSEMBLE THE SPACESHIP TOGETHER!</h1>
 			</div>
 			<div class="dblue grey">
@@ -48,7 +48,7 @@
 		</div>
 		<div class="column grey"> 
 			<div class="one center-content">
-				<img src="image/final1.png" id="done" class="restrict-img-size hidethis"/>
+				<img src="image/final1.png" id="done" class="restrict-img-size hidethis" onclick="playSound(this)"/>
 			</div>
 			<div class="blue box">
 				<img src="image/rocket4.png"  id="piece4" class="stretch-img-size hidethis" onclick="appearFourth(this)"/>
@@ -64,6 +64,7 @@
 			</div>
 		</div>
 		<audio src="sounds/boo.mp3" type="audio/mp3" id="boo"></audio>
+		<audio src="sounds/yay.mp3" type="audio/mp3" id="yay"></audio>
 	    <script src="script.js"></script>
 	</body>
 </html>

@@ -19,9 +19,9 @@ body {
 	display: none;
 	visibility: hidden;
 	}
-
 .title {
 	background-image: url("image/galaxy.jpg");
+	text-shadow: 2px 2px blue; 
 	color: white;
 	display:flex;
 	height: 10%;
@@ -93,8 +93,9 @@ body {
 	background-color:grey;
 }
 .opaque {
-	opacity: 0.5;
-	background-color: #92C6D4;
+	opacity: 0.6;
+	background-image: url("image/galaxy.jpg");
+	
 }
 .center-content {
 	align-items: center;
@@ -108,5 +109,6 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 }
+background-color: #2A33A3;
 
 /* Use this class on your image to restrict the size so it stays completely within it's parent div */

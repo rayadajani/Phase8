@@ -17,7 +17,9 @@ j = document.getElementById("two");
 k = document.getElementById("three");
 l = document.getElementById("four");
 m= document.getElementById("done");
+n= document.getElementById("build");
 var badSound = document.getElementById('boo');
+var playYay = document.getElementById('yay');
 
 //This function will remove the images from the "hidethis" class and the images will be appear in their designated divs
 function appearImages(el){
@@ -38,7 +40,7 @@ function imageSound(el){
 	badSound.play();
 	//alert("Wrong");
 	setTimeout(function(){ window.location.reload(); }, 1000);
-	// once this image is clicked, the page will reset since the answer the user chosen is incorrect
+	// once this image is clicked, the page will wait 1 second and reset since the answer the user chosen is incorrect
 }
 //Boolean method is a system which is used to create true or false statements
 var piece1= new Boolean(false)
@@ -48,6 +50,7 @@ var piece4= new Boolean(false)
 function appearFirst(el){
 	//The first piece will be removed from the hide this class and will appear in in the first div located on the top left
          i.classList.remove("hidethis");
+		 playYay.play();
 		 piece1 =true;
 }
 function appearSecond(el){
@@ -76,8 +79,24 @@ function appearFourth(el){
 		// allow the fourth image to appear and be placed in the div located in the right bottom div
 		document.getElementById("four").classList.remove("hidethis")
 		m.classList.remove("hidethis");
+		a.classList.add("hidethis");
+		b.classList.add("hidethis");
+		c.classList.add("hidethis");
+		d.classList.add("hidethis");
+		e.classList.add("hidethis");
+		f.classList.add("hidethis");
+		g.classList.add("hidethis");
+		h.classList.add("hidethis");
+		i.classList.add("opaque");
+		j.classList.add("opaque");
+		k.classList.add("opaque");
+		l.classList.add("opaque");
+		n.classList.add("hidethis");
 		}else{
 			window.location.reload();
-	}
+	}	
 }
-
+function playSound(el){
+	playYay.play();
+	document.location.href="https://sterlingblagg.github.io/EscapePhase8/";
+}
