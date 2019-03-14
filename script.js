@@ -42,23 +42,28 @@ function imageSound(el){
 	setTimeout(function(){ window.location.reload(); }, 1000);
 	// once this image is clicked, the page will wait 1 second and reset since the answer the user chosen is incorrect
 }
-//Boolean method is a system which is used to create true or false statements
+//Boolean method is a system which is used to create true or false statements. The statements are set false at first. 
 var piece1= new Boolean(false)
 var piece2= new Boolean(false)
 var piece3= new Boolean(false)
 var piece4= new Boolean(false)
+
 function appearFirst(el){
 	//The first piece will be removed from the hide this class and will appear in in the first div located on the top left
          i.classList.remove("hidethis");
 		 playYay.play();
 		 piece1 =true;
 }
+//(Most complex JS Function):The defined function ("appearSecond") below is apart of the Boolean method where a certain image has to appear before another image is clicked, so I used a true or false statement.
 function appearSecond(el){
+	//If the user clicks on the second image, the first image needs to be set to true and be placed in it's position for the second image to fit right next to it. Once this is set true, the second image will be called 
+//by it's id and be pulled out from the "hidethis" class and appear in the second div.
         if(piece1== true){
 			piece2 =true
 		// allow the second image to appear and be placed in the div located in the right first div
 		document.getElementById("two").classList.remove("hidethis")
 		}else{
+			//If the first piece is not set to true (false) or if the correct second image is not selected, the window page will reload. 
 			window.location.reload();
 	
 	}

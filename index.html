@@ -14,6 +14,8 @@
 				<img src="image/rocket3.png" id="piece3" class="stretch-img-size hidethis" onclick="appearThird(this)"/>
 			</div>
 			<div class="blue box">
+			<!-- This specific div contains an image (second piece to connect the full rocket) located in the "hidethis" class. 
+			Once this image is clicked with the onClick attribute, it will call the JS function "appearSecond(this)" and the image will be removed out of the "hidethis" class and appear in its specific position (second div located in the center).-->
 				<img src="image/rocket2.png"  id="piece2" class="stretch-img-size hidethis" onclick="appearSecond(this)"/>
 			</div>
 			<div class="blue box">
@@ -65,6 +67,7 @@
 		</div>
 		<audio src="sounds/boo.mp3" type="audio/mp3" id="boo"></audio>
 		<audio src="sounds/yay.mp3" type="audio/mp3" id="yay"></audio>
+		<!--Line 71 links the html to Java Script file in order for the JS Functions to work.-->
 	    <script src="script.js"></script>
 	</body>
 </html>
